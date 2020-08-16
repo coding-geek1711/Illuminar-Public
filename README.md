@@ -1,5 +1,7 @@
 # Illuminar
-Illuminar is the project exhibition by the Department of EEE, FISAT
+Illuminar is the project exhibition by the Department of EEE, FISAT.
+
+Visit: https://illuminar.netlify.app/
 
 
 Technologies used:
