@@ -4,7 +4,7 @@ Illuminar is the project exhibition by the Department of EEE, FISAT.
 Visit: https://illuminar.netlify.app/
 
 
-Technologies used:
+Following are the technologies used:
 
 1. Front-end
     - HTML5
