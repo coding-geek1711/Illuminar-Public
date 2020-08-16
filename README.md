@@ -9,6 +9,6 @@ Technologies used:
     - CCS3 and Bootstrap
     - Javascript
 2. Backend
-  - Node JS/express
+    - Node JS/express
 3. Database
-  - Mongo DB - Atlas
+    - Mongo DB - Atlas
