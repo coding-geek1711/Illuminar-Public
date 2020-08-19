@@ -1,0 +1,233 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  text-align: center;
+}
+.navitem {
+  padding: 0.5em;
+  margin-right: 0.5em;
+}
+
+.brandname {
+  text-align: center;
+  font-size: 5em;
+  background-color: #fff;
+}
+
+.carouselParent {
+  margin-top: 6em;
+}
+
+.carouselclass {
+  color: white;
+}
+
+.description {
+  margin-top: 5em;
+}
+
+.counter {
+  background-color: #f5f5f5;
+  padding: 20px 0;
+  border-radius: 5px;
+}
+
+.count-title {
+  font-size: 5em;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.count-text {
+  font-size: 1.5em;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.fa-2x {
+  margin: 0 auto;
+  float: none;
+  display: table;
+  color: #4ad1e5;
+}
+
+.statisticsClass h3 {
+  font-size: 5em;
+  margin-top: 1.5em;
+}
+.statisticsClass p {
+  font-size: 1.5em;
+  margin-top: 1.5em;
+  padding: 0.5em;
+}
+
+.fontStats {
+  font-size: 100px;
+}
+
+@media only screen and (max-width: 760px) {
+  .description {
+    font-size: 0.8em;
+  }
+  .statisticsClass h3 {
+    font-size: 3em;
+  }
+}
+
+/* Cover */
+.site-wrapper {
+  background: url("../img/cover.jpg") no-repeat center fixed;
+  display: table;
+  width: 100%;
+  height: 600px;
+  background-color: #333;
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.coverButton {
+  border: 1px solid white;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+.coverButton:hover {
+  background-color: white;
+  transition: 0.3s;
+}
+
+footer {
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  background: #343a40;
+}
+
+.main-content {
+  display: flex;
+  color: #cccecf;
+}
+
+.main-content .box {
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+
+.box h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.box .content {
+  margin: 20px 0 0 0;
+}
+
+.left h2,
+.center h2,
+.right h2 {
+  font-size: 2em;
+}
+
+.left .content p {
+  text-align: justify;
+  font-size: 20px;
+}
+
+.left .content .social {
+  margin: 20px 0 0 0;
+}
+
+.left .content .social a {
+  padding: 0 2px;
+}
+
+.left .content .social a i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  font-size: 1.5em;
+  color: #cccecf;
+  text-decoration: none;
+}
+
+.left .content .social a i:hover {
+  color: gray;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.center .content {
+  margin-left: 5em;
+  text-align: justify;
+}
+
+.center .content .fas {
+  font-size: 1.4375em;
+  height: 45px;
+  width: 45px;
+  font-size: 1.5em;
+}
+
+.center .content .fa:hover {
+  color: gray;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.center .content span {
+  font-size: 20px;
+}
+
+.right form .msg {
+  margin-top: 10px;
+}
+
+.right form input,
+.right form textarea {
+  width: 100%;
+  font-size: 1.5em;
+  background: #2e3338;
+  padding-left: 10px;
+  border: 1px solid #cccecf;
+}
+
+.right form .email,
+.right form .msg {
+  text-align: justify;
+  font-size: 20px;
+}
+
+.right form input {
+  height: 35px;
+}
+
+.right form input:focus,
+.right form textarea:focus {
+  outline-color: #222222;
+}
+
+.right form .btn {
+  margin-top: 10px;
+}
+
+.right form .button button {
+  color: #cccecf;
+  height: 40px;
+  width: 100%;
+  background: none;
+  border: 1px solid #cccecf;
+  outline: none;
+  background: #2e3338;
+}
+
+.right form .button button:hover {
+  background: #171a1c;
+  transition: 0.3s;
+}
