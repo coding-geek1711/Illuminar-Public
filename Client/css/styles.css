@@ -6,7 +6,7 @@ body {
   text-align: center;
 }
 .navitem {
-	font-size: 1.2rem;
+  font-size: 1.2rem;
   padding: 0.5em;
   margin-right: 0.25em;
   color: #f3f5f5;
@@ -14,26 +14,45 @@ body {
 }
 
 .nav-button {
-	color: #fff;
-	background-color: #343a40;
-	border-radius: 10%;
-	border: 1px solid white;
+  color: #fff;
+  background-color: #343a40;
+  border: none;
+  font-size: 1.1em;
 }
 
 .nav-button:hover {
-	background-color: white;
-	color:#343a40;
-	transition-duration: 0.3s;
+  background-color: white;
+  color: #343a40;
+  transition-duration: 0.3s;
 }
 
 .nav-button-text {
-	padding: 5px;
+  padding: 5px;
 }
 
 .loginButton {
-	color: white ; 
-	background-color: rgb(51, 172, 151); border-color: black;
-	margin: 5px;
+  font-size: 1.1em;
+  text-align: auto;
+  height: 40px;
+  width: 100%;
+  color: white;
+  background-color: rgb(51, 172, 151);
+  margin: 5px;
+}
+
+.credits {
+  border-top: 1px solid #f3f5f5;
+  color: #f3f5f5;
+}
+
+.illuminar {
+  font-size: 1.5em;
+}
+
+.illuminar:hover {
+  color: white;
+  font-size: 1.7em;
+  transition-duration: 0.3s;
 }
 
 .brandname {
@@ -111,19 +130,19 @@ body {
   background: url("../imgs/backcover.jpeg") no-repeat center fixed;
   display: table;
   width: 100%;
-  height: 600px;
+  height: 800px;
   background-color: #092144;
 }
 .site-wrapper-inner {
   display: table-cell;
   vertical-align: middle;
   color: #fcfcfc;
-  font-size: 30px;
+  font-size: 1.5em;
   padding-bottom: 10px;
-  
 }
 
 .coverButton {
+  width: 10%;
   border: 1px solid rgb(206, 194, 194);
   padding: 10px 20px;
   font-weight: bold;
@@ -196,7 +215,7 @@ footer {
 }
 
 .center .content {
-  margin-left: 5em;
+  margin-left: 6.5em;
   text-align: justify;
 }
 
@@ -204,7 +223,6 @@ footer {
   font-size: 1.4375em;
   height: 45px;
   width: 45px;
-  font-size: 1.5em;
 }
 
 .center .content .fa:hover {
@@ -223,9 +241,10 @@ footer {
 
 .right form input,
 .right form textarea {
+  border-radius: 10px;
   width: 100%;
-  font-size:medium;
-  background: #f2f5f7;
+  font-size: medium;
+  background: #b7bcbe;
   padding-left: 10px;
   border: 1px solid #0e0f0f;
 }
@@ -243,6 +262,8 @@ footer {
 .right form input:focus,
 .right form textarea:focus {
   outline-color: #222222;
+  background-color: white;
+  transition-duration: 0.3s;
 }
 
 .right form .btn {
@@ -250,6 +271,7 @@ footer {
 }
 
 .right form .button button {
+  border-radius: 10px;
   color: #050505;
   height: 40px;
   width: 100%;

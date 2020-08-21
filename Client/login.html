@@ -69,12 +69,15 @@
       </div>
       <div class="input-group">
         <form action="" id="Signup" class="signup" style="display: none;">
-          <input type="text" name="name" class="name" placeholder="Name" required>
-          <input type="email" name="mail" class="email" placeholder="Email" required>
-          <input type="text" class="input-field-signup" placeholder="University ID" name="univId" required />
-          <input type="password" class="password-signup" placeholder="Password" name="password" required />
+          <input type="text" name="name" class="name" placeholder="Name" required id="name">
+          <input type="email" name="mail" class="email1" placeholder="Email" required id="email">
+          <input type="text" class="input-field-signup" placeholder="University ID" name="univId" required  id="univID"/>
+          <input type="password" class="password-signup" placeholder="Password" name="password" required id="password"/>
           <input type="password" class="password-signup" placeholder="Confirm Password" name="confirmPassword"
-            required />
+            required id="confirmPass"/>
+            <input type="checkbox" class="check-box"><span>I Agree to all the Terms and Conditions</span></input>
+            <br>
+            <br>
           <button class="btn btn-primary register">Sign Up</button>
         </form>
       </div>
@@ -135,6 +138,7 @@
         </div>
       </div>
     </div>
+    <div class="credits"><span>Created by EEE Dept FISAT | &copy;Illuminar.com</span></div>
   </footer>
   <script src="js/scripts.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
