@@ -1,7 +1,7 @@
 # Illuminar
 Illuminar is the project exhibition by the Department of EEE, FISAT.
 
-Visit: https://illuminar.netlify.app/
+Visit: https://illuminar.netlify.app/Client
 
 Following are the technologies used:
 
@@ -18,7 +18,7 @@ Workflow goes as follows:
 
 ### Frontend Work
 - [x] Make a Landing Page
-- [-] Making a Login/Signup Page
+- [x] Making a Login/Signup Page
 - [] Making a Dashboard
 - [] Making a Project Uploading Page
 - [] Making an Exhibits Page
