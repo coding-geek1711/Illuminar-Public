@@ -255,10 +255,16 @@ body {
   border: none;
   /* display: none; */
 }
+
 #Signup {
   /* display: none; */
 }
 
 .input-group .signup {
   top: 10px;
+}
+
+
+button:focus {
+  outline: 0;
 }
