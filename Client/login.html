@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styleslogin.css" />
+    <title>Illuminar Login Page</title>
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark"
+      role="navigation"
+    >
+      <a href="" class="navbar-brand">Illuminar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navitems"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navitems">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item navitem">
+            <a href="index.html" class="nav-link">
+              <button class="nav-button">
+                <span class="nav-button-text">Home</span>
+              </button></a
+            >
+          </li>
+          <li class="nav-item navitem">
+            <a href="" class="nav-link"
+              ><button class="nav-button">
+                <span class="nav-button-text">About</span>
+              </button></a
+            >
+          </li>
+          <li class="nav-item navitem">
+            <a href="" class="nav-link"
+              ><button class="nav-button">
+                <span class="nav-button-text">Exhibits</span>
+              </button></a
+            >
+          </li>
+          <li class="nav-item navitem">
+            <a href="" class="nav-link"
+              ><button class="nav-button">
+                <span class="nav-button-text">Contact</span>>
+              </button></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="auth-form">
+      <div class="form-box">
+        <div class="button-box">
+          <div class="button" id="button"></div>
+          <button class="toggle-btn" type="button" onclick="login()">Log In</button>
+          <button class="toggle-btn" type="button" onclick="register()">Register</button>
+        </div>
+        <div class="social-icons-facebookicon">
+          <i class="fa fa-facebook facebook"></i>
+        </div>
+        <div class="social-icons-googleicon">
+          <i class="fa fa-google google"></i>
+        </div>
+        <div class="input-group">
+            <form action="" id="Login">
+                <input
+                  type="text"
+                  class="input-field"
+                  placeholder="University ID"
+                  required
+                />
+                <input
+                  type="password"
+                  class="password"
+                  placeholder="Password"
+                  required
+                />
+                <input type="checkbox" class="check-box"><span>Remember Me?</span></input>
+                  <button class="btn btn-primary signin">Sign In</button>
+              </form>
+        </div>
+        <div class="input-group">
+            <form action="" id="Signup" class="signup" style="display: none;">
+                <input type="text" name="name" class="name" placeholder="Name" required>
+                <input type="email" name="mail" class="email" placeholder="Email" required>
+                <input
+                  type="text"
+                  class="input-field-signup"
+                  placeholder="University ID"
+                  name="univId"
+                  required
+                />
+                <input
+                  type="password"
+                  class="password-signup"
+                  placeholder="Password"
+                  name="password"
+                  required
+                />
+                <input
+                type="password"
+                class="password-signup"
+                placeholder="Confirm Password"
+                name="confirmPassword"
+                required
+              />
+                <button class="btn btn-primary register">Sign Up</button>
+              </form>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="main-content">
+        <div class="left box">
+          <h2>ABOUT US</h2>
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Necessitatibus commodi velit dolorum, suscipit eum corporis nobis
+              assumenda. Eos, laborum dolores.
+            </p>
+            <div class="social">
+              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="center box">
+          <h2>ADDRESS</h2>
+          <div class="content">
+            <div class="place">
+              <i class="fas fa fa-map-marker" aria-hidden="true"></i>
+              <span class="text">FISAT, Hormis Nagar</span>
+            </div>
+            <div class="phone">
+              <i class="fas fa fa-phone" aria-hidden="true"></i>
+              <span class="text">+000-000000</span>
+            </div>
+            <div class="email">
+              <i class="fas fa fa-envelope" aria-hidden="true"></i>
+              <span class="text">info@fisat.ac.in</span>
+            </div>
+          </div>
+        </div>
+        <div class="right box">
+          <h2>CONTACT US</h2>
+          <div class="content">
+            <form action="#">
+              <div class="email">
+                <div class="text">Email</div>
+                <input type="email" name="" id="" required />
+              </div>
+              <div class="msg">
+                <div class="text">Message</div>
+                <textarea name="" id="" cols="30" rows="3" required></textarea>
+              </div>
+              <div class="button">
+                <button type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
