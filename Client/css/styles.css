@@ -5,7 +5,6 @@ body {
   height: 100%;
   text-align: center;
 }
-
 .navitem {
 	font-size: 1.2rem;
   padding: 0.5em;
@@ -88,7 +87,6 @@ body {
   font-size: 5em;
   margin-top: 1.5em;
 }
-
 .statisticsClass p {
   font-size: 1.5em;
   margin-top: 1.5em;
@@ -103,7 +101,6 @@ body {
   .description {
     font-size: 0.8em;
   }
-
   .statisticsClass h3 {
     font-size: 3em;
   }
@@ -117,7 +114,6 @@ body {
   height: 600px;
   background-color: #092144;
 }
-
 .site-wrapper-inner {
   display: table-cell;
   vertical-align: middle;
@@ -134,7 +130,6 @@ body {
   color: #cccecf;
   background-color: rgb(51, 172, 151);
 }
-
 .coverButton:hover {
   background-color: white;
   transition: 0.3s;
