@@ -1,0 +1,264 @@
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.auth-form {
+  height: 100%;
+  width: 100;
+}
+
+.form-box {
+  /* height: 480px; */
+  height: 550px;
+  width: 400px;
+  margin: 13% auto;
+  background: #343a40;
+  position: relative;
+  padding: 5px;
+}
+
+/* ff61241f */
+.button-box {
+  width: 220px;
+  position: relative;
+  margin: 20px auto;
+  border: none;
+  box-shadow: 0 0 20px 9px #73808c;
+  background: #73808c;
+  border-radius: 30px;
+}
+
+.toggle-btn {
+  padding: 5px 20px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  position: relative;
+  color: white;
+}
+
+.toggle-btn:focus-visible {
+  outline: none;
+  border: 0;
+}
+
+.button {
+  border: 0;
+  outline: none;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: linear-gradient(to right, green, green);
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+/* .social-icons {
+  margin: 20px auto;
+  text-align: center;
+  display: inline;
+} */
+
+.social-icons-facebookicon {
+  padding-top: 50px;
+  margin: 20px auto;
+  text-align: center;
+  display: inline;
+}
+
+.social-icons-googleicon {
+  margin: 20px auto;
+  text-align: center;
+  display: inline;
+}
+
+.social-icons-facebookicon i {
+  width: 30px;
+  margin: 0 10%;
+  font-size: 2em;
+  color: #bfbfbf;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.social-icons-googleicon i {
+  width: 30px;
+  margin: 0 10%;
+  font-size: 2em;
+  color: #bfbfbf;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.social-icons-facebookicon i:hover,
+.social-icons-googleicon i:hover {
+  width: 30px;
+  margin: 0 10%;
+  font-size: 2.5em;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 50%;
+  transition-duration: 0.3s;
+}
+
+.input-group {
+  padding: 10px;
+  top: 150px;
+  position: absolute;
+  width: 90%;
+  transition-duration: 0.3s;
+  color: white;
+}
+
+.input-field {
+  color: white;
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 1px solid black;
+  outline: none;
+  background: none;
+}
+
+.password {
+  color: white;
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 1px solid black;
+  outline: none;
+  background: none;
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+
+.input-field:focus,
+.password:focus {
+  border-bottom: 1px solid white;
+  transition: 0.3s;
+}
+
+.check-box {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border-bottom: 1px solid black;
+  outline: none;
+  background: none;
+}
+
+.check-box span {
+  padding-bottom: 30px;
+}
+
+.signin {
+  margin-top: 60px;
+  margin-left: 10px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  outline: none;
+  background: none;
+}
+
+.name {
+  color: white;
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 1px solid black;
+  outline: none;
+  background: none;
+}
+
+.email {
+  color: white;
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 1px solid black;
+  outline: none;
+  background: none;
+}
+
+.input-field-signup {
+  color: white;
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 1px solid black;
+  outline: none;
+  background: none;
+}
+
+.password-signup {
+  color: white;
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 1px solid black;
+  outline: none;
+  background: none;
+}
+
+.name:focus,
+.input-field:focus,
+.email:focus .password-signup:focus {
+  color: white;
+  background: none;
+  border-bottom: 1px solid white;
+  transition: 0.3s;
+}
+
+.register {
+  margin-left: 10px;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  background: none;
+  border: 1px solid black;
+}
+
+#Login {
+  border: none;
+  /* display: none; */
+}
+#Signup {
+  /* display: none; */
+}
+
+.input-group .signup {
+  top: 10px;
+}
