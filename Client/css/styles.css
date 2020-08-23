@@ -5,6 +5,7 @@ body {
   height: 100%;
   text-align: center;
 }
+
 .navitem {
   font-size: 1.2rem;
   padding: 0.5em;
@@ -41,8 +42,9 @@ body {
 }
 
 .credits {
-  border-top: 1px solid #f3f5f5;
+  border-top: 1px solid rgb(80, 189, 119);
   color: #f3f5f5;
+  padding: 3rem 0;
 }
 
 .illuminar {
@@ -71,6 +73,8 @@ body {
 
 .description {
   margin-top: 5em;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .counter {
@@ -106,6 +110,7 @@ body {
   font-size: 5em;
   margin-top: 1.5em;
 }
+
 .statisticsClass p {
   font-size: 1.5em;
   margin-top: 1.5em;
@@ -120,6 +125,7 @@ body {
   .description {
     font-size: 0.8em;
   }
+
   .statisticsClass h3 {
     font-size: 3em;
   }
@@ -133,6 +139,7 @@ body {
   height: 850px;
   background-color: #092144;
 }
+
 .site-wrapper-inner {
   display: table-cell;
   vertical-align: middle;
@@ -142,13 +149,13 @@ body {
 }
 
 .coverButton {
-  width: 10%;
   border: 1px solid rgb(206, 194, 194);
   padding: 10px 20px;
   font-weight: bold;
   color: #cccecf;
   background-color: rgb(51, 172, 151);
 }
+
 .coverButton:hover {
   background-color: white;
   transition: 0.3s;
@@ -158,12 +165,15 @@ footer {
   position: relative;
   bottom: 0px;
   width: 100%;
-  background: #343a40;
+  background: #292929;
+  color: #fff;
+  padding-top: 3rem;
 }
 
 .main-content {
   display: flex;
   color: #acc7c5;
+
 }
 
 .main-content .box {
@@ -188,11 +198,11 @@ footer {
 
 .left .content p {
   text-align: justify;
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 .left .content .social {
-  margin: 20px 0 0 0;
+  margin: 1rem 0 0 0;
 }
 
 .left .content .social a {
@@ -284,4 +294,45 @@ footer {
 .right form .button button:hover {
   background: #f1f4f7;
   transition: 0.3s;
+}
+
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: none;
+  margin-bottom: 1.25rem;
+  background: #b7bcbe;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+
+
+.form-control::placeholder {
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+
+
+.submit-btn {
+  background-color: rgb(51, 172, 151);
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.25rem;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 0.875;
+  border: none;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+
+.col-sm {
+  padding-top: 2rem;
 }
