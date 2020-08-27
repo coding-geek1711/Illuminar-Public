@@ -19,7 +19,7 @@ Workflow goes as follows:
 ### Frontend Work
 - [x] Make a Landing Page
 - [x] Making a Login/Signup Page
-- [] Making a Dashboard
+- [x] Making a Dashboard
 - [] Making a Project Uploading Page
 - [] Making an Exhibits Page
 - [] Making an About Page
