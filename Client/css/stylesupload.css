@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: block;
+  align-items: center;
+}
+
+.drop-zone {
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  width: 80%;
+  height: 300px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+  color: lightgray;
+  border: 4px dashed #343a40;
+  border-radius: 10px;
+}
+
+.drop-zone--over {
+  border-style: solid;
+}
+
+.drop-zone__input {
+  font-size: 0.7em;
+  display: none;
+}
+
+.drop-zone__thumb {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: lightgray;
+  background-size: cover;
+  position: relative;
+}
+
+.drop-zone__thumb::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 0;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
+  font-size: 14px;
+  text-align: center;
+}
+
+.submit {
+  width: 80%;
+  height: 50px;
+}
+
+.student-details {
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  width: fit-content;
+  outline: none;
+}
+
+.student-details h1 {
+  font-size: 5rem;
+}
+
+.member-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.member-container .show-button {
+  width: 80%;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.member-container .display-container {
+  height: 400%;
+  width: 80%;
+  margin: auto;
+  background: lightgray;
+  border: 2px dashed #343a40;
+  border-radius: 10px;
+}
+
+.member-container .display-container .input-field label {
+  width: 100%;
+  margin-top: 30px;
+  font-size: 2.3em;
+  font-weight: 500;
+}
+
+.input-field #input-area {
+  width: 70%;
+  height: 40px;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid #b7bcbe;
+  font-size: large;
+}
+
+.input-field .add-member,
+.input-field .remove-member {
+  width: 30%;
+  display: inline;
+  margin: 10px;
+}
+
+.input-field ul li {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  list-style: none;
+  height: 50px;
+  text-justify: auto;
+  text-align: center;
+  padding: 5px;
+  font-size: 1.5em;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.input-field ul li:hover,
+.input-field ul li:active {
+  background: white;
+  font-size: 1.75em;
+  transition-duration: 0.3s;
+}
+
+.input-field #dropdiv {
+  width: 70%;
+  height: 100px;
+  margin: auto;
+  border: 1px solid red;
+  margin-bottom: 10px;
+  padding: 30px;
+  font-size: 1.5rem;
+  color: white;
+  background: rgba(255, 100, 100);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.input-field #dropdiv::after,
+.input-field #dropdiv:active {
+  background: linear-gradient(rgba(200, 100, 100), rgba(200, 50, 50));
+}
+
+.guide-name h5 {
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.guide-name h3 {
+  margin: auto;
+  width: fit-content;
+}
+
+#abstract {
+  width: 80%;
+  font-size: 1.5em;
+  height: 300px;
+}
+
+.youtube-video-link {
+  margin: auto;
+  margin-top: 20px;
+  width: 80%;
+}
+
+.youtube-video-link h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.video-id {
+  width: 100%;
+  text-align: center;
+  height: 50px;
+}
+
+.video-id:focus {
+  background: lightgray;
+}
+
+.youtube-link {
+  width: 100%;
+  height: 500px;
+  margin-top: 30px;
+}
+
+.video-button {
+  margin: 10px;
+  width: 50%;
+}
