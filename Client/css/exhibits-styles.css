@@ -38,7 +38,7 @@ p {
 }
 
 .section {
-    padding: 5rem 0;
+    padding: 2rem 0;
 }
 
 .section-center {
@@ -75,6 +75,7 @@ p {
 .exhibit-title {
     padding: 2rem 0;
     text-transform: uppercase;
+    color: rgb(165 41 143 / 1)
 }
 
 select {
@@ -174,7 +175,7 @@ select::-ms-expand {
             url("../imgs/exhibit-banner.jpg") no-repeat center/cover;
         display: table;
         width: 100%;
-        height: 75vh;
+        height: 60vh;
         z-index: 2;
     }
 
