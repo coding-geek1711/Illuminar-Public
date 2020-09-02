@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/stylesupload.css" />
+    <title>Illuminar Dashboard</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark"
+      role="navigation"
+    >
+      <a href="" class="navbar-brand illuminar">Illuminar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navitems"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navitems">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item navitem">
+            <a href="" class="nav-link">
+              <button class="nav-button">
+                <span class="nav-button-text">Home</span>
+              </button></a
+            >
+          </li>
+          <li class="nav-item navitem">
+            <a href="" class="nav-link"
+              ><button class="nav-button">
+                <span class="nav-button-text">About</span>
+              </button></a
+            >
+          </li>
+          <li class="nav-item navitem">
+            <a href="" class="nav-link"
+              ><button class="nav-button">
+                <span class="nav-button-text">Exhibits</span>
+              </button></a
+            >
+          </li>
+          <li class="nav-item navitem">
+            <a href="" class="nav-link"
+              ><button class="nav-button">
+                <span class="nav-button-text">Contact</span>
+              </button></a
+            >
+          </li>
+          <li class="nav-item navitem">
+            <a href="index.html"
+              ><button class="btn btn-outline-danger logoutButton">
+                Logout
+              </button></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <section class="section-1">
+        <div class="student-details">
+          <div class="student-name">
+            <h1 contenteditable="true">Project Name</h1>
+          </div>
+          <div class="guide-name">
+            <h5 id="enter-guide">Under Guidance of</h5>
+            <h3 contenteditable="true" id="guide">Guide Name Here</h3>
+          </div>
+        </div>
+      </section>
+      <section class="section-2">
+        <div class="member-container">
+          <button class="btn btn-primary show-button">Show Members</button>
+          <div class="display-container">
+            <div class="input-field">
+              <label for="input-area">Enter Member Name</label>
+              <input type="text" name="" id="input-area" />
+              <button class="btn btn-outline-success add-member">
+                Add Member
+              </button>
+              <button class="btn btn-outline-danger remove-member">
+                Remove Member
+              </button>
+              <ul class="list"></ul>
+              <div
+                id="dropdiv"
+                ondrop="drop(event)"
+                ondragover="allowDrop(event)"
+              >
+                <h3>Drop here to remove</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-3">
+        <div class="project-details">
+          <h1 class="project-details-headers">Abstract</h1>
+          <textarea name="abstract" id="abstract"></textarea>
+          <br />
+        </div>
+      </section>
+      <section class="section-4">
+        <form action="" method="POST">
+          <h1>Upload Images here</h1>
+          <div class="drop-zone">
+            <span class="drop-zone-prompt" draggable="true"
+              >Drop File here or Click To Upload</span
+            >
+            <!-- <div class="drop-zone__thumb" data-label="myFile.txt"></div> -->
+            <input
+              type="file"
+              name="myFile"
+              class="drop-zone__input"
+              draggable="true"
+            />
+          </div>
+          <button class="btn btn-primary submit" type="submit">Upload</button>
+        </form>
+      </section>
+      <section class="section-5">
+        <div class="youtube-video-link">
+          <h1>Youtube Video</h1>
+          <input type="text" class="video-id" value="enter video id here" />
+          <button class="btn btn-secondary video-button">Enter Video ID</button>
+        </div>
+      </section>
+    </div>
+
+    <br />
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <div class="left box">
+              <h3>ABOUT US</h3>
+              <div class="content">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Necessitatibus commodi velit dolorum, suscipit eum corporis
+                  nobis assumenda. Eos, laborum dolores.
+                </p>
+                <div class="social">
+                  <a href="#"
+                    ><i class="fa fa-facebook" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-twitter" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-instagram" aria-hidden="true"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa fa-youtube" aria-hidden="true"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="left box">
+              <h3>ADDRESS</h3>
+              <div class="content">
+                <div class="place">
+                  <i class="fas fa fa-map-marker" aria-hidden="true"></i>
+                  <span class="text">FISAT, Hormis Nagar</span>
+                </div>
+                <div class="phone">
+                  <i class="fas fa fa-phone" aria-hidden="true"></i>
+                  <span class="text">+000-000000</span>
+                </div>
+                <div class="email">
+                  <i class="fas fa fa-envelope" aria-hidden="true"></i>
+                  <span class="text">info@fisat.ac.in</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="left box">
+              <h3>CONTACT US</h3>
+              <div class="content">
+                <form action="" autocomplete="off">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      placeholder="Name"
+                      class="form-control"
+                      name="name"
+                    />
+                    <input
+                      type="email"
+                      placeholder="Email"
+                      class="form-control"
+                      name="email"
+                    />
+                    <textarea
+                      name="message"
+                      id=""
+                      rows="8"
+                      class="form-control"
+                      placeholder="Message"
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn submit-btn">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="credits">
+        <span>Created by EEE Dept FISAT | &copy;Illuminar.com</span>
+      </div>
+    </footer>
+    <script src="js/upload.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
