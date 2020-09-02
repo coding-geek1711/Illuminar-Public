@@ -173,7 +173,6 @@ footer {
 .main-content {
   display: flex;
   color: #acc7c5;
-
 }
 
 .main-content .box {
@@ -296,7 +295,6 @@ footer {
   transition: 0.3s;
 }
 
-
 .form-control {
   display: block;
   width: 100%;
@@ -309,12 +307,10 @@ footer {
   letter-spacing: 0.25rem;
 }
 
-
 .form-control::placeholder {
   text-transform: uppercase;
   letter-spacing: 0.25rem;
 }
-
 
 .submit-btn {
   background-color: rgb(51, 172, 151);
@@ -332,7 +328,11 @@ footer {
   padding: 1rem;
 }
 
-
 .col-sm {
   padding-top: 2rem;
+}
+
+.navbar-dark,
+.bg-dark {
+  background: #292929;
 }
