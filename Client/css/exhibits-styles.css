@@ -4,8 +4,8 @@
     --transition: all 0.3s linear;
     --spacing: 0.25rem;
     --radius: 0.5rem;
-    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --light-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.2);
+    --dark-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
 }
 
 img {
