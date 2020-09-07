@@ -20,9 +20,9 @@ Workflow goes as follows:
 - [x] Make a Landing Page
 - [x] Making a Login/Signup Page
 - [x] Making a Dashboard
-- [] Making a Project Uploading Page
-- [] Making an Exhibits Page
-- [] Making an About Page
+- [x] Making a Project Uploading Page
+- [x] Making an Exhibits Page
+- [x] Making an About Page
 - []
 - []
 - []
