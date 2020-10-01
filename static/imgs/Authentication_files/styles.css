@@ -1,0 +1,338 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  text-align: center;
+}
+
+.navitem {
+  font-size: 1.2rem;
+  padding: 0.5em;
+  margin-right: 0.25em;
+  color: #f3f5f5;
+  border-color: rgb(51, 172, 151);
+}
+
+.nav-button {
+  color: #fff;
+  background-color: #343a40;
+  border: none;
+  font-size: 1.1em;
+}
+
+.nav-button:hover {
+  background-color: white;
+  color: #343a40;
+  transition-duration: 0.3s;
+}
+
+.nav-button-text {
+  padding: 5px;
+}
+
+.loginButton {
+  font-size: 1.1em;
+  text-align: auto;
+  height: 40px;
+  width: 100%;
+  color: white;
+  background-color: rgb(51, 172, 151);
+  margin: 5px;
+}
+
+.credits {
+  border-top: 1px solid rgb(80, 189, 119);
+  color: #f3f5f5;
+  padding: 3rem 0;
+}
+
+.illuminar {
+  font-size: 1.5em;
+}
+
+.illuminar:hover {
+  color: white;
+  font-size: 1.7em;
+  transition-duration: 0.3s;
+}
+
+.brandname {
+  text-align: center;
+  font-size: 5em;
+  background-color: #fff;
+}
+
+.carouselParent {
+  margin-top: 6em;
+}
+
+.carouselclass {
+  color: white;
+}
+
+.description {
+  margin-top: 5em;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.counter {
+  background-color: #f5f5f5;
+  padding: 20px 0;
+  border-radius: 5px;
+}
+
+.count-title {
+  font-size: 5em;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.count-text {
+  font-size: 1.5em;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.fa-2x {
+  margin: 0 auto;
+  float: none;
+  display: table;
+  color: #4ad1e5;
+}
+
+.statisticsClass h3 {
+  font-size: 5em;
+  margin-top: 1.5em;
+}
+
+.statisticsClass p {
+  font-size: 1.5em;
+  margin-top: 1.5em;
+  padding: 0.5em;
+}
+
+.fontStats {
+  font-size: 100px;
+}
+
+@media only screen and (max-width: 760px) {
+  .description {
+    font-size: 0.8em;
+  }
+
+  .statisticsClass h3 {
+    font-size: 3em;
+  }
+}
+
+/* Cover */
+.site-wrapper {
+  background: url("../imgs/backcover.jpeg") no-repeat center fixed;
+  display: table;
+  width: 100%;
+  height: 850px;
+  background-color: #092144;
+}
+
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: middle;
+  color: #fcfcfc;
+  font-size: 1.5em;
+  padding-bottom: 10px;
+}
+
+.coverButton {
+  border: 1px solid rgb(206, 194, 194);
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #cccecf;
+  background-color: rgb(51, 172, 151);
+}
+
+.coverButton:hover {
+  background-color: white;
+  transition: 0.3s;
+}
+
+footer {
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  background: #292929;
+  color: #fff;
+  padding-top: 3rem;
+}
+
+.main-content {
+  display: flex;
+  color: #acc7c5;
+}
+
+.main-content .box {
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+
+.box h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.box .content {
+  margin: 20px 0 0 0;
+}
+
+.left h2,
+.center h2,
+.right h2 {
+  font-size: 2em;
+}
+
+.left .content p {
+  text-align: justify;
+  font-size: 1rem;
+}
+
+.left .content .social {
+  margin: 1rem 0 0 0;
+}
+
+.left .content .social a {
+  padding: 0 2px;
+}
+
+.left .content .social a i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  font-size: 1.5em;
+  color: #cccecf;
+  text-decoration: none;
+}
+
+.left .content .social a i:hover {
+  color: gray;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.center .content {
+  margin-left: 6.5em;
+  text-align: justify;
+}
+
+.center .content .fas {
+  font-size: 1.4375em;
+  height: 45px;
+  width: 45px;
+}
+
+.center .content .fa:hover {
+  color: gray;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.center .content span {
+  font-size: 20px;
+}
+
+.right form .msg {
+  margin-top: 10px;
+}
+
+.right form input,
+.right form textarea {
+  border-radius: 10px;
+  width: 100%;
+  font-size: medium;
+  background: #b7bcbe;
+  padding-left: 10px;
+  border: 1px solid #0e0f0f;
+}
+
+.right form .email,
+.right form .msg {
+  text-align: justify;
+  font-size: 20px;
+}
+
+.right form input {
+  height: 35px;
+}
+
+.right form input:focus,
+.right form textarea:focus {
+  outline-color: #222222;
+  background-color: white;
+  transition-duration: 0.3s;
+}
+
+.right form .btn {
+  margin-top: 10px;
+}
+
+.right form .button button {
+  border-radius: 10px;
+  color: #050505;
+  height: 40px;
+  width: 100%;
+  background: none;
+  border: 1px solid #cccecf;
+  outline: none;
+  background: rgb(51, 172, 151);
+}
+
+.right form .button button:hover {
+  background: #f1f4f7;
+  transition: 0.3s;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: none;
+  margin-bottom: 1.25rem;
+  background: #b7bcbe;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+
+.form-control::placeholder {
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+
+.submit-btn {
+  background-color: rgb(51, 172, 151);
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.25rem;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 0.875;
+  border: none;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.col-sm {
+  padding-top: 2rem;
+}
+
+.navbar-dark,
+.bg-dark {
+  background: #292929;
+}

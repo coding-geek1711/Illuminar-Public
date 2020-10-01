@@ -1,34 +1,15 @@
-# Illuminar
-Illuminar is the project exhibition by the Department of EEE, FISAT.
+# ILLUMINAR
 
-Visit: https://illuminar.netlify.app/Client
+### USER AUTH COMPLETED!!!
 
-Following are the technologies used:
+- Updating README Left... Will do it when I feel less sleepy
 
-1. Front-end
-    - HTML5
-    - CCS3 and Bootstrap
-    - Javascript
-2. Backend
-    - Node JS/express
-3. Database
-    - Mongo DB - Atlas
+### Work To Do
 
-Workflow goes as follows:
-
-### Frontend Work
-- [x] Make a Landing Page
-- [x] Making a Login/Signup Page
-- [x] Making a Dashboard
-- [x] Making a Project Uploading Page
-- [x] Making an Exhibits Page
-- [x] Making an About Page
+- [x] npm install all dependencies
+- [x] Make changes to package.json to nodemon run dev
+- [x] Make server.js file and make a basic web server running on 3000
+- [x] Declare a Router and route all static files
+- [x] Create the database URI files
 - []
 - []
-- []
-- []
-- []
-- []
-- []
-- []
-### Backend Work

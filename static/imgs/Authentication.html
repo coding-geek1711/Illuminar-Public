@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://localhost:3000/auth -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Authentication_files/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Authentication_files/font-awesome.min.css">
+    <link rel="stylesheet" href="./Authentication_files/styles.css">
+    <link rel="stylesheet" href="./Authentication_files/styleslogin.css">
+    <title>Authentication</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark" role="navigation">
+    <a href="http://localhost:3000/" class="navbar-brand">Illuminar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navitems" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navitems">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item navitem">
+          <a href="http://localhost:3000/" class="nav-link">
+            <button class="nav-button">
+              <span class="nav-button-text">Home</span>
+            </button></a>
+        </li>
+        <li class="nav-item navitem">
+          <a href="http://localhost:3000/about" class="nav-link"><button class="nav-button">
+              <span class="nav-button-text">About</span>
+            </button></a>
+        </li>
+        <li class="nav-item navitem">
+          <a href="http://localhost:3000/exhibits" class="nav-link"><button class="nav-button">
+              <span class="nav-button-text">Exhibits</span>
+            </button></a>
+        </li>
+        <li class="nav-item navitem">
+          <a href="http://localhost:3000/contact" class="nav-link"><button class="nav-button">
+              <span class="nav-button-text">Contact</span>
+            </button></a>
+        </li>
+        <li class="nav-item navitem">
+          <a href="http://localhost:3000/auth"><button class="btn btn-outline-success loginButton">Login</button></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="auth-form">
+    <div class="form-box">
+      <div class="button-box">
+        <div class="button1" id="button" style="left: 0px;"></div>
+        <button class="toggle-btn" type="button" onclick="login()">Log In</button>
+        <button class="toggle-btn" type="button" onclick="register()">Register</button>
+      </div>
+      <div class="social-icons-facebookicon">
+        <i class="fa fa-facebook facebook"></i>
+      </div>
+      <div class="social-icons-googleicon">
+        <i class="fab fa-google google"></i>
+      </div>
+      <div class="input-group">
+        <form action="http://localhost:3000/auth" id="Login" style="">
+          <input type="text" class="input-field" placeholder="University ID" required="">
+          <input type="password" class="password" placeholder="Password" required="">
+          <input type="checkbox" class="check-box"><span>Remember Me?</span>
+          <button class="btn btn-primary signin">Sign In</button>
+        </form>
+      </div>
+      <div class="input-group">
+        <form action="http://localhost:3000/auth" id="Signup" class="signup" style="display: none;">
+          <input type="text" name="name" class="name" placeholder="Name" required="" id="name">
+          <input type="email" name="mail" class="email1" placeholder="Email" required="" id="email">
+          <input type="text" class="input-field-signup" placeholder="University ID" name="univId" required="" id="univID">
+          <input type="password" class="password-signup" placeholder="Password" name="password" required="" id="password">
+          <input type="password" class="password-signup" placeholder="Confirm Password" name="confirmPassword" required="" id="confirmPass">
+          <input type="checkbox" class="check-box"><span>I Agree to all the Terms and Conditions</span>
+          <br>
+          <br>
+          <button class="btn btn-primary register">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <div class="left box">
+              <h3>ABOUT US</h3>
+              <div class="content">
+                <p>
+                  The Department of Electrical And Electronics Engineering was
+                  started in the year 2002. The annual sanctioned intake of
+                  B.Tech program in Electrical and Electronics Engineering is
+                  60. The department is backed by a team of motivated, dedicated
+                  and experienced teachers graduated from institutions of good
+                  repute. Power System had been a thrust area in Electrical
+                  Engineering. But with the advent of Power Electronics devices,
+                  the contemporary Power System had changed and it took a new
+                  phase. Power Electronics has significant role in various
+                  phases of Power System. The generation of electric power using
+                  alternative/ renewable energy sources has become very popular
+                  nowadays. With the intention of giving the students to explore
+                  deep into the trending areas, the Post Graduate Programme in
+                  Power Electronics and Power Systems in the year 2011 with an
+                  annual intake of 24.
+                </p>
+                <div class="social">
+                  <a href="http://localhost:3000/auth#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  <a href="http://localhost:3000/auth#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  <a href="http://localhost:3000/auth#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                  <a href="http://localhost:3000/auth#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="left box">
+              <h3>ADDRESS</h3>
+              <div class="content">
+                <div class="place">
+                  <i class="fas fa fa-map-marker" aria-hidden="true"></i>
+                  <span class="text">Department of EEE, <br>
+                    Hormis Nagar, Mookkannoor, Angamaly, Kerala 683577</span>
+                </div>
+                <div class="phone">
+                  <i class="fas fa fa-phone" aria-hidden="true"></i>
+                  <span class="text">+91 484 272 5272</span>
+                </div>
+                <div class="email">
+                  <i class="fas fa fa-envelope" aria-hidden="true"></i>
+                  <span class="text">eee@fisat.ac.in</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="left box">
+              <h3>CONTACT US</h3>
+              <div class="content">
+                <form action="http://localhost:3000/auth" autocomplete="off">
+                  <div class="form-group">
+                    <input type="text" placeholder="Name" class="form-control" name="name">
+                    <input type="email" placeholder="Email" class="form-control" name="email">
+                    <textarea name="message" id="" rows="8" class="form-control" placeholder="Message"></textarea>
+                  </div>
+                  <button type="submit" class="btn submit-btn">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="credits">
+        <span>Created by EEE Dept FISAT | ©Illuminar.com</span>
+      </div>
+    </footer>
+    <script src="./Authentication_files/scripts.js.download"></script>
+    <script src="./Authentication_files/jquery-3.5.1.slim.min.js.download" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="./Authentication_files/popper.min.js.download" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="./Authentication_files/bootstrap.min.js.download" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  
+
+</body></html>

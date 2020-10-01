@@ -1,0 +1,93 @@
+<div class="container">
+  <form action="" method="post">
+    <section class="section-1">
+      <div class="student-details">
+        <div class="student-name">
+          <h1 contenteditable="true" id="Project_Name">Project Name</h1>
+        </div>
+        <div class="guide-name">
+          <h5 id="enter-guide">Under Guidance of</h5>
+          <h3 contenteditable="true" id="guide">Guide Name Here</h3>
+        </div>
+      </div>
+    </section>
+    <section class="section-2">
+      <div class="member-container">
+        <button class="btn btn-primary show-button">Show Members</button>
+        <div class="display-container">
+          <div class="input-field">
+            <label for="input-area">Enter Member Name</label>
+            <input type="text" name="" id="input-area" />
+            <button class="btn btn-outline-success add-member">
+              Add Member
+            </button>
+            <button class="btn btn-outline-danger remove-member">
+              Remove Member
+            </button>
+            <ul class="list">
+              <li>FIT19EE029</li>
+            </ul>
+            <div
+              id="dropdiv"
+              ondrop="drop(event)"
+              ondragover="allowDrop(event)"
+            >
+              <h3>Drop here to remove</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <h2>Select Year of Study</h2>
+    <section class="select-year">
+      <select name="YEAR_OF_STUDY" id="YEAR_OF_STUDY">
+        <option value="2020">2020</option>
+        <option value="2019">2019</option>
+        <option value="2018">2018</option>
+      </select>
+    </section>
+    <h2>Select Type of Project</h2>
+    <section class="select-project">
+      <h2></h2>
+      <select name="TYPE_OF_PROJECT" id="TYPE_OF_PROJECT">
+        <option value="DESIGN">Design Project</option>
+        <option value="MAJOR">Major Project</option>
+        <option value="MINOR">Minor Project</option>
+      </select>
+    </section>
+    <section class="section-3">
+      <div class="project-details">
+        <h1 class="project-details-headers">Abstract</h1>
+        <textarea name="abstract" id="abstract"></textarea>
+        <br />
+      </div>
+    </section>
+    <section class="section-4">
+      <h1>Upload Images here</h1>
+      <div class="drop-zone">
+        <span class="drop-zone-prompt" draggable="true"
+          >Drop File here or Click To Upload</span
+        >
+        <!-- <div class="drop-zone__thumb" data-label="myFile.txt"></div> -->
+        <input
+          type="file"
+          name="myFile"
+          class="drop-zone__input"
+          id="inputFileData"
+          draggable="true"
+        />
+      </div>
+      <div>
+        <input type="button" value="Cancel Button" class="removeUploadsButton"></input>
+      </div>
+    </section>
+    <section class="section-5">
+      <div class="youtube-video-link">
+        <h1>Youtube Video</h1>
+        <input type="text" class="video-id" value="enter video id here" />
+        <button class="btn btn-secondary video-button">Enter Video ID</button>
+      </div>
+    </section>
+    <button class="btn btn-primary submit" type="submit" id="uploadButton">Upload</button>
+  </form>
+</div>

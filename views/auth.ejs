@@ -1,0 +1,54 @@
+
+<div class="auth-form">
+<div class="form-box">
+    <div class="button-box">
+    <div class="button1" id="button"></div>
+    <button class="toggle-btn" type="button" onclick="login()">Log In</button>
+    <button class="toggle-btn" type="button" onclick="register()">Register</button>
+    </div>
+    <div class="social-icons-facebookicon">
+    <i class="fa fa-facebook facebook"></i>
+    </div>
+    <div class="social-icons-googleicon">
+    <i class="fa fa-google-plus google"></i>
+    </div>
+    <div class="input-group">
+    <% if (msg) { %>
+        <% if (msg !== "Registered") { %>
+            <div class="alert alert-danger" role="alert"><%= msg %> </div>
+        <% } else {%>
+            <div class="alert alert-success" role="alert"><%= msg %> </div>
+        <% } %>
+    <% } %>
+    <% if (messages.error) { %>
+        <div class="alert alert-danger" role="alert"><%= messages.error %> </div>
+    <% } %>
+    <form action="/auth/login" method="POST" id="Login">
+        <input type="text" class="input-field" placeholder="University ID" name="univId" required />
+        <input type="password" class="password" placeholder="Password" name="password" required />
+        <input type="checkbox" class="check-box"><span>Remember Me?</span></input>
+        <button class="btn btn-primary signin">Sign In</button>
+    </form>
+    <div>
+        <a href="/resetpassword" id="forgot-password"><h5>Forgot Password? Click Here !!!</h5></a>
+    </div>
+    </div>
+    <div class="input-group">
+    <form action="/auth/signup" method="POST" id="Signup" class="signup" style="display: none;">
+        <input type="text" name="name" class="name" placeholder="Name" required id="name">
+        <input type="email" name="email" class="email1" placeholder="Email" required id="email">
+        <input type="text" class="input-field-signup" placeholder="University ID" name="univId" required
+        id="univID" />
+        <input type="password" class="password-signup" placeholder="Password" name="password" required
+        id="password" />
+        <input type="password" class="password-signup" placeholder="Confirm Password" name="confirmPassword" required
+        id="confirmPass" />
+        <input type="checkbox" class="check-box" required><span>I Agree to all the Terms and Conditions</span></input>
+        <br>
+        <br>
+        <button class="btn btn-primary register">Sign Up</button>
+    </form>
+    </div>
+</div>
+</div>
+

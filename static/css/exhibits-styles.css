@@ -1,0 +1,243 @@
+:root {
+    --clr-grey-10: hsl(210, 36%, 96%);
+
+    --transition: all 0.3s linear;
+    --spacing: 0.25rem;
+    --radius: 0.5rem;
+    --light-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.2);
+    --dark-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+p {
+    margin-bottom: 1.25rem;
+}
+
+.site-wrapper {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../imgs/exhibit-banner.jpg") no-repeat center;
+    display: table;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+
+.exhibit-banner {
+    text-align: center;
+}
+
+.exhibit-banner-text {
+    text-align: center;
+    font-size: 1rem;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 2rem 0;
+}
+
+.section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.view-option-container {
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    font-size: 1.2rem;
+}
+
+.view-btn {
+    border: none;
+    outline: none;
+    width: 50vw;
+    padding: 1.5rem 0;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.view-btn:hover {
+    background-color: #ddd;
+}
+
+.view-btn.active {
+    background-color: #666;
+    color: white;
+}
+
+.exhibit-title {
+    padding: 2rem 0;
+    text-transform: uppercase;
+    color: rgb(165 41 143 / 1)
+}
+
+select {
+    width: 17rem;
+    padding: 0.7rem;
+    /* border-radius: 10px; */
+    /* font-size: 1.2rem; */
+}
+
+option {
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+/* CAUTION: Internet Explorer hackery ahead */
+
+select::-ms-expand {
+    display: none;
+    /* Remove default arrow in Internet Explorer 10 and 11 */
+}
+
+/* Target Internet Explorer 9 to undo the custom arrow */
+@media screen and (min-width: 0\0) {
+    select {
+        background: none\9;
+        padding: 5px\9;
+    }
+}
+
+.exhibit-form {
+    margin-bottom: 3rem;
+    font-size: 1.3rem;
+}
+
+.project-card {
+    transition: var(--transition);
+    background: var(--clr-grey-10);
+    box-shadow: var(--light-shadow);
+    margin-bottom: 2rem;
+}
+
+.project-card:hover {
+    box-sizing: var(--dark-shadow);
+    transform: scale(1.02);
+}
+
+.project-img-container {
+    position: relative;
+}
+
+.project-img {
+    height: 17rem;
+    object-fit: cover;
+}
+
+.project-likes {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #343434;
+    margin-bottom: 0;
+    padding: 0.5rem 1rem;
+    color: #dedede;
+}
+
+.project-info {
+    text-align: left;
+    padding: 1.5rem 1.5rem;
+}
+
+.project-info p {
+    text-align: justify;
+}
+
+/* .project-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: start;
+    margin-bottom: 0;
+    background: #323232;
+}
+
+
+.project-footer p {
+    line-height: 0;
+    color: #dedede;
+
+
+} */
+
+@media screen and (min-width: 768px) {
+    .site-wrapper {
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.94) 40%, rgba(0, 0, 0, 0) 100%),
+            url("../imgs/exhibit-banner.jpg") no-repeat center/cover;
+        display: table;
+        width: 100%;
+        height: 60vh;
+        z-index: 2;
+    }
+
+    .exhibit-banner {
+        text-align: left;
+        margin-left: 2rem;
+
+    }
+
+    .exhibit-banner-text {
+        text-align: left;
+        font-size: 1rem;
+        max-width: 40%;
+        margin-left: 2rem;
+        text-align: justify;
+        /* margin: 0 auto; */
+    }
+
+    .project-center {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+    .project-card {
+        flex: 0 0 calc(50% - 2rem);
+    }
+
+}
+
+a,
+u {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+a:hover {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1170px) {
+    /* .site-wrapper {
+        background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+            url("../imgs/exhibit-banner.jpg") no-repeat center;
+        display: table;
+        width: 100%;
+        height: 50vh;
+        z-index: 2;
+    } */
+
+    .project-center {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .project-card {
+        flex: 0 0 calc(33.33% - 2rem);
+    }
+
+}
