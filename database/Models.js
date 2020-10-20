@@ -26,6 +26,9 @@ const user = sequelize.define("users", {
 });
 
 const projects = sequelize.define("projects", {
+  creator: {
+    type: Sequelize.STRING,
+  },
   project_name: {
     type: Sequelize.STRING,
     defaultValue: null,
@@ -54,3 +57,7 @@ const images = sequelize.define("images", {
 // user.sync({ force: true });
 
 module.exports = { user };
+
+// PROJECT NAME: PYHTON CODING
+// 1, 2, 3 ==> 4
+// 1,2,3, [4]
