@@ -48,13 +48,13 @@ const projects = sequelize.define("projects", {
   },
 });
 
-const images = sequelize.define("images", {
-  image_path: {
-    type: Sequelize.STRING,
-    defaultValue: null,
-  },
-});
-// user.sync({ force: true });
+// const images = sequelize.define("images", {
+//   image_path: {
+//     type: Sequelize.STRING,
+//     defaultValue: null,
+//   },
+// });
+user.sync({ force: true });
 
 module.exports = { user };
 

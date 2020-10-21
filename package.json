@@ -21,7 +21,8 @@
     "pg": "^8.3.3",
     "pg-hstore": "^2.3.3",
     "rand-token": "^1.0.1",
-    "sequelize": "^6.3.5"
+    "sequelize": "^6.3.5",
+    "tedious": "^9.2.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"

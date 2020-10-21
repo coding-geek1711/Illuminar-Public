@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/95aa6cf3-5ce4-4032-9528-85d97a2a2df8/resourceGroups/WebDevelopment/providers/Microsoft.Web/sites/illuminarserver",
+    "appService.deploySubpath": "."
+}
