@@ -50,7 +50,7 @@ async function registerUser(name, email, univId, password, confirmPassword) {
       await sendConfirmationMail(name, email, univId, token);
       return response;
     } catch (error) {
-      throw err;
+      throw error;
     }
   }
 }

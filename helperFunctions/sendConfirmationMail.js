@@ -25,7 +25,7 @@ async function sendConfirmationEmail(name, email, univId, token) {
       <br>
       <br>
       <h3>Click on the Link given Below!!!<br>
-              <a href="https://illuminar-eeefisat-dev.herokuapp.com/confirmation/${token}">https://illuminar-eeefisat-dev.herokuapp.com/confirmation/${token}</a></h3>
+              <a href="https://illuminarserver.azurewebsites.net/confirmation/${token}">https://illuminarserver.azurewebsites.net/confirmation/${token}</a></h3>
       <br>
       <br>
       `,

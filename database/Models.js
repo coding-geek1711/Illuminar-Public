@@ -54,7 +54,7 @@ const projects = sequelize.define("projects", {
 //     defaultValue: null,
 //   },
 // });
-user.sync({ force: true });
+// user.sync({ force: true });
 
 module.exports = { user };
 
